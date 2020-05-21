@@ -301,6 +301,22 @@ var UIController = (function() {
 
         },
 
+        changedType: function() {
+
+            var fileds = document.querySelectorAll(
+                    `${DOMStrings.inputType},
+                    ${DOMStrings.inputDescription},
+                    ${DOMStrings.inputValue}`
+                );
+
+            nodeListForEach(fileds, function(cur) {
+                cur.classList.toggle("red-focus");
+            });
+
+            document.querySelector(DOMStrings.inputBtn).classList.toggle("red");
+
+        },
+
         getDOMStrings: function() {
             return DOMStrings;
         }
@@ -323,6 +339,8 @@ var controller = (function(budgetCtrl, UICtrl) {
         });
 
         document.querySelector(DOM.container).addEventListener("click", ctrlDeleteItem);
+
+        document.querySelector(DOM.inputType).addEventListener("change", UIController.changedType);
     };
 
 
