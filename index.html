@@ -5,11 +5,15 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
         <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
         <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>Budgety</title>
     </head>
     <body>
 
         <div class="top">
+            <div class="container p-0 m-0">
+                <div class="row">
+
             <div class="budget">
                 <div class="budget__title">
                     Available Budget in <span class="budget__title--month">&percnt;Month&percnt;</span>:
@@ -33,11 +37,14 @@
                     </div>
                 </div>
             </div>
+                </div>
+
+            </div>
         </div>
 
 
 
-        <div class="bottom">
+        <div class="bottom col-sm-12 col-md-12 col-xl-6" style="display: contents;">
             <div class="add">
                 <div class="add__container">
                     <select class="add__type">
@@ -50,7 +57,7 @@
                 </div>
             </div>
 
-            <div class="container clearfix">
+            <div class="container clearfix" style="display: flex;justify-content: center;padding: 0px;text-align: -webkit-center;">
                 <div class="income">
                     <h2 class="icome__title">Income</h2>
 
